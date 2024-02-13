@@ -1,7 +1,7 @@
 ---
 title: "Data Science for Public Policy"
-subtitle: "Git Class"
-author: "Juanito Menendez . jmm676"
+subtitle: "Assignment 04"
+author: Diana Rivas García (dnr36) and Juan Manuel Menéndez (jmm676)
 execute:
   warning: false
 format:
@@ -10,15 +10,14 @@ format:
 ---
 
 ```{r}
-library(tidyverse)
+1 + 1
 ```
 
+You can add options to executable code like this
+
 ```{r}
-storms %>%
-  ggplot(mapping = aes(x= wind, y= pressure)) + 
-  geom_point() + 
-  facet_wrap(vars(month))
-  
+#| echo: false
+2 * 2
 ```
 
 The `echo: false` option disables the printing of code (only output is displayed).
