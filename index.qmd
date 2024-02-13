@@ -1,0 +1,24 @@
+---
+title: "Data Science for Public Policy"
+subtitle: "Git Class"
+author: "Juanito Menendez . jmm676"
+execute:
+  warning: false
+format:
+  html:
+    embed-resources: true
+---
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+storms %>%
+  ggplot(mapping = aes(x= wind, y= pressure)) + 
+  geom_point() + 
+  facet_wrap(vars(month))
+  
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
